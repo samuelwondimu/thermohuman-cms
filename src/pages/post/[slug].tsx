@@ -70,7 +70,7 @@ export default function ProjectSlugRoute(
           <p className="post__excerpt">{post.excerpt}</p>
           <p className="post__date">{formatDate(post._createdAt)}</p>
           <div className="post__content">
-            <PortableText value={post.body} />
+            <PortableText value={post.content} />
           </div>
         </div>
       </section>
