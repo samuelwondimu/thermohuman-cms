@@ -3,10 +3,19 @@ import Link from 'next/link'
 export default function Container({ children }: { children: React.ReactNode }) {
   return (
     <div className="container">
-      <header className="header">
+      <header
+        className="header"
+        style={{
+          alignItems: 'center',
+          gap: 44,
+        }}
+      >
         <Link className="header__title" href="/">
           Next.js + Sanity
         </Link>
+        <Link href="/publication">publication</Link>
+        <Link href="/news">news</Link>
+        <Link href="/news">langauge (en)</Link>
       </header>
       <main>{children}</main>
       <footer className="footer">
